@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #232f3e;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Navigation styles */
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #f3d4c0;
+  }
+  
+  /* Product details styles */
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+  }
+  
+  .product-images {
+    flex: 1;
+    max-width: 50%; /* You can adjust this percentage as needed */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+  .product-images img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .product-info {
+    flex: 1;
+    padding-left: 30px;
+    display: flex; /* Para alinear imagen y descripción horizontalmente */
+    align-items: flex-start; /* Alinear en la parte superior */
+  
+  }
+  .description-image img {
+    max-width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+   
+  }
+  .product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info .price {
+    font-size: 18px;
+    color: #e47911;
+    margin-bottom: 10px;
+  }
+  
+  .product-info .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .buy-button {
+    background-color: #f0c14b;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #d1a245;
+  }
+  
+  /* Footer styles */
+footer {
+  background-color: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+  
