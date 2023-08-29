@@ -24,6 +24,8 @@ section {
   padding-bottom: 100px;
 }
 
+
+
 .blue {
   background: #a5c8ca;
   display: flex;
@@ -152,7 +154,10 @@ nav a:hover {
   gap: 20px;
   margin: 0 350px;
 }
-
+.title2 h1 {
+  font-size: 60px; /* Ajusta el tamaño del título según tus necesidades */
+ margin-bottom: -70px;
+}
 .producto {
   background-color: white;
   border: 1px solid #ddd;
