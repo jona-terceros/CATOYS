@@ -40,13 +40,7 @@ section h3 {
 
 
 }
-.gato2 {
-  position: absolute; /* Establece una posición absoluta */
-  top: 450px; /* Ajusta la distancia desde la parte superior */
-  left: 600px; /* Ajusta la distancia desde la izquierda */
-  width: 300px; /* Ajusta el ancho de la imagen */
-  height: auto; /* Permite que la imagen mantenga su relación de aspecto */
-}
+
 
 
 .blue {
@@ -116,6 +110,7 @@ section h3 {
   z-index: -1;
 }
 
+
 header {
   background-color: #232f3e;
   color: white;
@@ -133,8 +128,8 @@ header {
 
 .logo {
   position: absolute;
-  left: 1330px; /* Ajusta la posición izquierda según tus necesidades */
-  top: 10px; /* Ajusta la posición superior según tus necesidades */
+  right: 20px; /* Ajusta la distancia desde el borde derecho según tus necesidades */
+  top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
 }
 
 .logo img {
@@ -143,11 +138,18 @@ header {
 }
 
 header.sticky {
-  background-color: #232f3e;
+  background-color: rgba(35, 47, 62, 0.8); /* Color con transparencia */
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   align-items: center;
   justify-content: center; 
+  transition: background-color 0.3s ease;
 }
+
+/* Resto de tus estilos para el header */
+
 
 
 nav ul {
@@ -184,26 +186,56 @@ section:nth-child(2) {
 
 /* Estilo del título "Productos" */
 .title2 {
-  display:flex ;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  min-height: 50vh; /* Puedes ajustar esta altura según tus necesidades */
   position: relative;
 }
 
 .title2 h1 {
   font-size: 60px;
-  position: absolute;
   text-align: center;
-  width: 100%; /* Asegura que el ancho del título sea 100% del contenedor */
-  transform: translate(-50%, -50%); /* Centra el título tanto horizontal como verticalmente */
-  top: 270px;
 }
+.title1 {
+  display: grid;
+  place-items: center;
+  min-height: 10vh; /* Puedes ajustar esta altura según tus necesidades */
+  position: relative;
+}
+
+.title1 h3 {
+  font-size: 35px;
+  text-align: center;
+}
+.title1 .gato2 {
+   width: 35%;
+   height: 90%;
+  align-items: center;
+  margin-bottom: -200px;
+}
+
+.title1 h1 {
+  font-size: 35px;
+  text-align: left;
+}
+.title {
+  display: grid;
+  place-items: left;
+  position: relative;
+  min-height: 25vh; /* Puedes ajustar esta altura según tus necesidades */
+}
+.title h1{
+  font-size: 55px;
+  text-align: right;
+  padding-right: 200px;
+  padding-bottom: 180px;
+}
+
   
 .producto {
   background-color: white;
   border: 1px solid #ddd;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   max-width: 100%;
@@ -261,7 +293,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   display: inline-block;
   margin: 5px;
   font-size: 26px;
@@ -269,7 +301,7 @@ footer a {
 
 footer p {
   text-decoration: none;
-  color: #fff;
+  color: black;
   display: inline-block;
   margin: 5px;
   font-size: 20px;

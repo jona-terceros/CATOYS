@@ -10,11 +10,11 @@
   <header class="sticky">
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#adopt">Adopta un Gato</a></li>
-        <li><a href="#miau">Miau Style</a></li>
-        <li><a href="#about">Acerca de Nosotros</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="index.html" onclick="scrollToTop();">Inicio</a></li>
+          <li><a href="https://main--glistening-marshmallow-f21d9b.netlify.app/" target="_blank">Adopta un Gato</a></li>
+          <li><a href="https://luissebastian28.github.io/catStore/"  target="_blank">Miau Style</a></li>
+          <li><a href="acerca.html">Acerca de Nosotros</a></li>
+          <li><a href="#footer">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -28,10 +28,11 @@
           <img src="/img/juguete3-3.jpg" alt="Juguete Interactivo" />
           <img src="/img/juguete3-4.jpg" alt="Juguete Interactivo" />
           <!-- Agrega más imágenes según sea necesario -->
-        </div>
+       
         <button class="carousel-button carousel-button-left">◀</button>
         <button class="carousel-button carousel-button-right">▶</button>
       </div>
+    </div>
       <div class="product-info">
         <h1>Juguete Interactivo</h1>
         <div class="description-image">
@@ -68,6 +69,15 @@
     function updateCarousel() {
       images.forEach((img, index) => {
         img.style.transform = `translateX(-${currentIndex * 100}%)`;
+      });
+    }
+  </script>
+  <script>
+    // Función para manejar el clic en el enlace "Inicio"
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Esto proporciona un desplazamiento suave
       });
     }
   </script>
