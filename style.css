@@ -186,7 +186,7 @@ section:nth-child(2) {
   font-size: 60px; /* Cambia el tamaño de la fuente */
   position: absolute; /* Establece una posición absoluta */
   top: 230px; /* Ajusta la distancia desde la parte superior */
-  right: 510px; /* Ajusta la distancia desde la izquierda */
+  right: 445px; /* Ajusta la distancia desde la izquierda */
 }
 .producto {
   background-color: white;
@@ -241,7 +241,7 @@ footer {
   background-color: #a5c8ca;
   color: #fff;
   text-align: center;
-  padding: 30px 0;
+  padding: 15px 0;
   width: 100%;
   position: absolute; /* Cambia a position: absolute; */
   bottom: 0;
@@ -260,7 +260,7 @@ footer p {
   color: #fff;
   display: inline-block;
   margin: 5px;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .publicidad {
