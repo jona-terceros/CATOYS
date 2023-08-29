@@ -18,16 +18,16 @@
 
   <body>
     <header class="sticky">
-        <nav>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#adopt">Adopta un Gato</a></li>
-            <li><a href="#miau">Miau Style</a></li>
-            <li><a href="#about">Acerca de Nosotros</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="javascript:void(0);" onclick="scrollToTop();">Inicio</a></li>
+          <li><a href="https://main--glistening-marshmallow-f21d9b.netlify.app/" target="_blank">Adopta un Gato</a></li>
+          <li><a href="https://luissebastian28.github.io/catStore/"  target="_blank">Miau Style</a></li>
+          <li><a href="#about">Acerca de Nosotros</a></li>
+          <li><a href="#footer">Contacto</a></li>
+        </ul>
+      </nav>
+      
         
         <div class="logo">
           <img src="img/logo.png" alt="Logo de Catoys">
@@ -57,8 +57,26 @@
         <h1>Productos</h1>
       </div>
     </section>
-
+    <section class="publicidad">
+      <a href="https://merry-zabaione-affca4.netlify.app/" target="_blank">
+        <img src="img/comodidadfelina.jpg" alt="Descripción de la imagen" class="imagen-derecha" >
+        
+      </a>
+      <a href="https://dwijanx.github.io/meatProject/" target="_blank">
+        <img src="img/saboresmiau.jpg" alt="Descripción de la imagen" class="imagen-derecha-abajo">
+      </a>
+      <a href="https://6abriel1chiro.github.io/gatitos-ecommerce/" target="_blank">
+        <img src="img/pawsandshine.jpg" alt="Descripción de la imagen" class="imagen-izquierda">
+      </a>
+      <a href="https://mark00es.github.io/PaginaComidaGatos/" target="_blank">
+        <img src="img/comidagato.jpg" alt="Descripción de la imagen" class="imagen-izquierda-abajo">
+      </a>
+      <a href="https://melinagutierrez.github.io/RascaFelicidad/" target="_blank">
+        <img src="img/rascadores.jpg" alt="Descripción de la imagen" class="imagen-izquierda-abajo-abajo">
+      </a>
+    </section>
     <section class="productos">
+      
       <article class="producto">
 
           <img src="/img/juguete1.jpg" alt="Juguete para gato 1">
@@ -148,7 +166,7 @@
     </section>
     <section id="footer">
       <footer>
-          <p>Catoys</p>
+          <p>© 2023 Cat Toys Store. All rights reserved.</p>
           <div class="redes">
               <a href="https://api.whatsapp.com/send?phone=59161616470&text=Hola%20Jonatan!%20Me%20quiero%20contactar%20contigo"><i class="fa-brands fa-whatsapp"></i></a>
               <a href="https://github.com/jona-terceros" target= "_blank"><i class="fa-brands fa-github"></i></a>
@@ -157,5 +175,14 @@
   
       </footer>
     </section>
+    <script>
+      // Función para manejar el clic en el enlace "Inicio"
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth" // Esto proporciona un desplazamiento suave
+        });
+      }
+    </script>
   </body>
   </html>

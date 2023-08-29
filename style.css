@@ -34,14 +34,14 @@ section h1 {
 section h3 {
   position: absolute; /* Agrega posición absoluta para mover el párrafo */
   font-size: 30px; /* Cambia el tamaño de la fuente */
-  top: 220px; /* Ajusta la distancia desde la parte superior */
+  top: 300px; /* Ajusta la distancia desde la parte superior */
   left: 450px; /* Ajusta la distancia desde la derecha */
 
 
 }
 .gato2 {
   position: absolute; /* Establece una posición absoluta */
-  top: 340px; /* Ajusta la distancia desde la parte superior */
+  top: 450px; /* Ajusta la distancia desde la parte superior */
   left: 600px; /* Ajusta la distancia desde la izquierda */
   width: 300px; /* Ajusta el ancho de la imagen */
   height: auto; /* Permite que la imagen mantenga su relación de aspecto */
@@ -174,7 +174,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Distribución equitativa de columnas */
   gap: 20px;
-  margin: -300px 350px 0 350px; /* Ajusta el margen superior e inferior según sea necesario */
+  margin: -700px 350px 0 350px; /* Ajusta el margen superior e inferior según sea necesario */
 }
 section:nth-child(2) {
   position: relative; /* Establece una posición relativa */
@@ -184,11 +184,9 @@ section:nth-child(2) {
 /* Estilo del título "Productos" */
 .title2 h1 {
   font-size: 60px; /* Cambia el tamaño de la fuente */
-
-  text-align: left; /* Alinea el texto a la izquierda */
   position: absolute; /* Establece una posición absoluta */
-  top: 100px; /* Ajusta la distancia desde la parte superior */
-  right: 520px; /* Ajusta la distancia desde la izquierda */
+  top: 230px; /* Ajusta la distancia desde la parte superior */
+  right: 590px; /* Ajusta la distancia desde la izquierda */
 }
 .producto {
   background-color: white;
@@ -263,4 +261,61 @@ footer p {
   display: inline-block;
   margin: 5px;
   font-size: 26px;
+}
+
+.publicidad {
+  position: relative;
+}
+
+.imagen-derecha,
+.imagen-derecha-abajo {
+  position: absolute;
+  z-index: 1;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.imagen-izquierda,
+.imagen-izquierda-abajo {
+  position: absolute;
+  z-index: 1;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.imagen-izquierda-abajo-abajo{
+  position: absolute;
+  z-index: 1;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-derecha {
+  top: 50px;
+  right: -10px;
+  width: 300px;
+  height: auto;
+}
+
+.imagen-derecha-abajo {
+  top: 600px;
+  right: -10px;
+  width: 300px;
+  height: auto;
+}
+.imagen-izquierda {
+  top: 50px;
+  left: 20px;
+  width: 300px;
+  height: auto;
+}
+.imagen-izquierda-abajo {
+  top: 600px;
+  left: 20px;
+  width: 300px;
+  height: auto;
+}
+.imagen-izquierda-abajo-abajo {
+  top: 1000px;
+  left: 20px;
+  width: 300px;
+  height: auto;
 }
