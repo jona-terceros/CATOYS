@@ -26,17 +26,26 @@ section {
 
 .blue {
   background: #a5c8ca;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos al centro horizontal */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 50px 0; /* Añade espacio vertical alrededor de los elementos */
 }
+ 
+
 .blue p {
-  text-align: right;
-  margin-left: 30%; /* Puedes ajustar este valor según tus necesidades */
-  font-size: 30px;
-  
+  position: absolute; /* Agrega posición absoluta para mover el párrafo */
+  top: 240px; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  font-size: 30px; /* Ajusta el tamaño del párrafo según tus necesidades */
 }
 .blue h1 {
-  text-align: right;
-  font-size: 4rem; /* O el tamaño que desees */
+  position: absolute; /* Agrega posición absoluta para mover el h1 */
+  top: 60px; /* Ajusta la distancia desde la parte superior */
+  right: 350px; /* Ajusta la distancia desde la derecha */
+  font-size: 70px; /* Ajusta el tamaño del título según tus necesidades */
+
 }
 
 
