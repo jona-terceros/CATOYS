@@ -7,14 +7,30 @@
   <!-- Additional styles or scripts -->
 </head>
 <body>
-  <header>
-    <!-- ... (contenido del encabezado) ... -->
+  <header class="sticky">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#adopt">Adopta un Gato</a></li>
+        <li><a href="#miau">Miau Style</a></li>
+        <li><a href="#about">Acerca de Nosotros</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="container">
     <main class="product-details">
       <div class="product-images">
-        <img src="/img/juguete2.jpg" alt="Juguete Interactivo" />
+        <div class="carousel-container">
+          <img src="/img/juguete2.jpg" alt="Juguete Interactivo" />
+          <img src="/img/juguete2-1.jpg" alt="Juguete Interactivo" />
+          <img src="/img/juguete2-2.jpg" alt="Juguete Interactivo" />
+          <img src="/img/juguete2-3.jpg" alt="Juguete Interactivo" />
+          <!-- Agrega más imágenes según sea necesario -->
+        </div>
+        <button class="carousel-button carousel-button-left">◀</button>
+        <button class="carousel-button carousel-button-right">▶</button>
       </div>
       <div class="product-info">
         <h1>Juguete Interactivo 2</h1>
@@ -32,5 +48,28 @@
 
     </div>
   </footer>
+
+  <script>
+    const images = document.querySelectorAll('.product-images img');
+    const prevButton = document.querySelector('.carousel-button-left');
+    const nextButton = document.querySelector('.carousel-button-right');
+    let currentIndex = 0;
+  
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateCarousel();
+    });
+  
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateCarousel();
+    });
+  
+    function updateCarousel() {
+      images.forEach((img, index) => {
+        img.style.transform = `translateX(-${currentIndex * 100}%)`;
+      });
+    }
+  </script>
 </body>
 </html>
