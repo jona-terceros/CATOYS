@@ -183,12 +183,23 @@ section:nth-child(2) {
 }
 
 /* Estilo del título "Productos" */
-.title2 h1 {
-  font-size: 60px; /* Cambia el tamaño de la fuente */
-  position: absolute; /* Establece una posición absoluta */
-  top: 230px; /* Ajusta la distancia desde la parte superior */
-  right: 580px; /* Ajusta la distancia desde la izquierda */
+.title2 {
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  position: relative;
 }
+
+.title2 h1 {
+  font-size: 60px;
+  position: absolute;
+  text-align: center;
+  width: 100%; /* Asegura que el ancho del título sea 100% del contenedor */
+  transform: translate(-50%, -50%); /* Centra el título tanto horizontal como verticalmente */
+  top: 270px;
+}
+  
 .producto {
   background-color: white;
   border: 1px solid #ddd;
