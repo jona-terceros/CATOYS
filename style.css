@@ -186,7 +186,7 @@ section:nth-child(2) {
   font-size: 60px; /* Cambia el tamaño de la fuente */
   position: absolute; /* Establece una posición absoluta */
   top: 230px; /* Ajusta la distancia desde la parte superior */
-  right: 445px; /* Ajusta la distancia desde la izquierda */
+  right: 550px; /* Ajusta la distancia desde la izquierda */
 }
 .producto {
   background-color: white;
